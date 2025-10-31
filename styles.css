@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #2e2e2e, #3a3a3a);
+    border-radius: 20px;
+    padding: 25px;
+    width: 380px;
+}
+
+#titulo {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#inputPantalla {
+    text-align: right;
+    margin-left: 10px;
+    width: 90%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #121212;
+    color: #adff2f;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#inputPantalla:focus {
+    outline: none;
+    box-shadow: 0 0 5px 3px #adff2f;
+}
+
+#botones {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-auto-rows: 70px;
+    gap: 12px;
+    justify-content: center;
+}
+
+#botones button {
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(145deg, #3b3b3b, #2a2a2a);
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5),
+                -2px -2px 6px rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+}
+
+#botones button:hover {
+    transform: translateY(-3px);
+}
+
+#botones button.clicked {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px 3px #adff2f;
+}
+
+#botones button.clickedclear {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px 3px rgb(206, 75, 28);
+}
+
+#botones button.clicked\+ {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px 3px rgb(98, 98, 218);  
+}
+
+#botones button.clicked\= {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px 3px rgb(25, 201, 25);  
+}
+
+#botones #\= {
+    background: linear-gradient(145deg, rgb(31, 161, 31), rgb(15, 134, 15));
+    color: white;
+}
+
+#botones #clear {
+    background: linear-gradient(145deg, rgb(252, 98, 42), rgb(224, 66, 9));
+    color: white;
+}
+
+#botones #\+ {
+  grid-row: span 2;
+  height: 150px;
+  background: linear-gradient(145deg, rgb(63, 63, 206), rgb(55, 55, 165));
+  color: white;
+  font-weight: bold;
+}
